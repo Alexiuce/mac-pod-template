@@ -37,6 +37,7 @@
 		D8647AA4203D74B7008D1098 = {
 			isa = PBXGroup;
 			children = (
+				D8647AE3203D824E008D1098 /* Podspec Metadata */,
 				D8647AAF203D74B7008D1098 /* PROJECT */,
 				D8647AAE203D74B7008D1098 /* Products */,
 			);
@@ -61,6 +62,13 @@
 				D8647ABA203D74B7008D1098 /* PROJECT.entitlements */,
 			);
 			path = PROJECT;
+			sourceTree = "<group>";
+		};
+		D8647AE3203D824E008D1098 /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
