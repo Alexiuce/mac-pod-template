@@ -29,7 +29,7 @@ module Pod
       case snapshots
         when :yes
           configurator.add_pod_to_podfile "FBSnapshotTestCase' , '~> 2.1.4"
-          
+
           if keep_demo == :no
               puts " Putting demo application back in, you cannot do view tests without a host application."
               keep_demo = :yes
@@ -43,7 +43,7 @@ module Pod
       Pod::ProjectManipulator.new({
         :configurator => @configurator,
         :xcodeproj_path => "templates/swift/Example/PROJECT.xcodeproj",
-        :platform => :ios,
+        :platform => :osx,
         :remove_demo_project => (keep_demo == :no),
         :prefix => ""
       }).run
