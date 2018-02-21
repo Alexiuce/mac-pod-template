@@ -11,7 +11,18 @@
 		D8647B07203D88ED008D1098 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8647B06203D88ED008D1098 /* ViewController.swift */; };
 		D8647B09203D88ED008D1098 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8647B08203D88ED008D1098 /* Assets.xcassets */; };
 		D8647B0C203D88ED008D1098 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8647B0A203D88ED008D1098 /* Main.storyboard */; };
+		D8647B53203D8B46008D1098 /* PROJECT_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8647B52203D8B46008D1098 /* PROJECT_Tests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8647B55203D8B46008D1098 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8647AF9203D88ED008D1098 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8647B00203D88ED008D1098;
+			remoteInfo = PROJECT_Example;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D8647B01203D88ED008D1098 /* PROJECT_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PROJECT_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,10 +32,20 @@
 		D8647B0B203D88ED008D1098 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8647B0D203D88ED008D1098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8647B0E203D88ED008D1098 /* PROJECT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PROJECT.entitlements; sourceTree = "<group>"; };
+		D8647B50203D8B46008D1098 /* PROJECT_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PROJECT_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8647B52203D8B46008D1098 /* PROJECT_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PROJECT_Tests.swift; sourceTree = "<group>"; };
+		D8647B54203D8B46008D1098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D8647AFE203D88ED008D1098 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8647B4D203D8B46008D1098 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +60,7 @@
 			children = (
 				D8647B21203D8949008D1098 /* Podspec Metadata */,
 				D8647B03203D88ED008D1098 /* PROJECT */,
+				D8647B51203D8B46008D1098 /* PROJECT_Tests */,
 				D8647B02203D88ED008D1098 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				D8647B01203D88ED008D1098 /* PROJECT_Example.app */,
+				D8647B50203D8B46008D1098 /* PROJECT_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +94,15 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		D8647B51203D8B46008D1098 /* PROJECT_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D8647B52203D8B46008D1098 /* PROJECT_Tests.swift */,
+				D8647B54203D8B46008D1098 /* Info.plist */,
+			);
+			path = PROJECT_Tests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,6 +123,24 @@
 			productReference = D8647B01203D88ED008D1098 /* PROJECT_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D8647B4F203D8B46008D1098 /* PROJECT_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8647B59203D8B46008D1098 /* Build configuration list for PBXNativeTarget "PROJECT_Tests" */;
+			buildPhases = (
+				D8647B4C203D8B46008D1098 /* Sources */,
+				D8647B4D203D8B46008D1098 /* Frameworks */,
+				D8647B4E203D8B46008D1098 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8647B56203D8B46008D1098 /* PBXTargetDependency */,
+			);
+			name = PROJECT_Tests;
+			productName = PROJECT_ExampleTests;
+			productReference = D8647B50203D8B46008D1098 /* PROJECT_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -104,6 +154,11 @@
 					D8647B00203D88ED008D1098 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+					};
+					D8647B4F203D8B46008D1098 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D8647B00203D88ED008D1098;
 					};
 				};
 			};
@@ -121,6 +176,7 @@
 			projectRoot = "";
 			targets = (
 				D8647B00203D88ED008D1098 /* PROJECT_Example */,
+				D8647B4F203D8B46008D1098 /* PROJECT_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -132,6 +188,13 @@
 			files = (
 				D8647B09203D88ED008D1098 /* Assets.xcassets in Resources */,
 				D8647B0C203D88ED008D1098 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8647B4E203D8B46008D1098 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +210,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D8647B4C203D8B46008D1098 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8647B53203D8B46008D1098 /* PROJECT_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8647B56203D8B46008D1098 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8647B00203D88ED008D1098 /* PROJECT_Example */;
+			targetProxy = D8647B55203D8B46008D1098 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D8647B0A203D88ED008D1098 /* Main.storyboard */ = {
@@ -297,6 +376,36 @@
 			};
 			name = Release;
 		};
+		D8647B57203D8B46008D1098 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PROJECT_ExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alexiuce.PROJECT-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PROJECT_Example.app/Contents/MacOS/PROJECT_Example";
+			};
+			name = Debug;
+		};
+		D8647B58203D8B46008D1098 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PROJECT_ExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alexiuce.PROJECT-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PROJECT_Example.app/Contents/MacOS/PROJECT_Example";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -314,6 +423,15 @@
 			buildConfigurations = (
 				D8647B12203D88ED008D1098 /* Debug */,
 				D8647B13203D88ED008D1098 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8647B59203D8B46008D1098 /* Build configuration list for PBXNativeTarget "PROJECT_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8647B57203D8B46008D1098 /* Debug */,
+				D8647B58203D8B46008D1098 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
