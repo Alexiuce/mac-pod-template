@@ -1,6 +1,8 @@
 macOS-pod-template
 ============
-
+![](https://img.shields.io/badge/platform-macOS-red.svg)
+![](https://img.shields.io/badge/Language-swift4.0-orange.svg)
+![](https://img.shields.io/badge/Language-ObjectiveC-yellow.svg)
 ### 使用方法:
  ```ruby
  pod lib create YourLibrary --template-url="https://github.com/Alexiuce/mac-pod-template.git" 

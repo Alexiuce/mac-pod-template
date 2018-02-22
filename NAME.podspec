@@ -10,6 +10,8 @@ Pod::Spec.new do |s|
   s.name             = '${POD_NAME}'
   s.version          = '0.1.0'
   s.summary          = 'A short description of ${POD_NAME}.'
+ # 如果是Swift项目,请启用下面这一行指定检测的语法版本,由于cocoapods 提交spec文件时会对源码进行语法检测,Swift默认是依据3.2的语法,因此无法识别Swift4的部分语法而报错
+ #s.swift_version = '4.0' 
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
